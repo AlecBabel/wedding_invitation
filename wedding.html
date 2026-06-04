@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Олександр & Оксана | 22.08.2026</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    color:#333;
+    background:#fff;
+}
+
+section{
+    padding:100px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:60px;
+    text-align:center;
+    color:#7d6851;
+    margin-bottom:50px;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url("images/couple.jpg") center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:100px;
+    font-weight:300;
+}
+
+.hero .date{
+    margin-top:20px;
+    font-size:28px;
+    letter-spacing:3px;
+}
+
+.hero a{
+    display:inline-block;
+    margin-top:40px;
+    color:white;
+    border:1px solid white;
+    padding:15px 40px;
+    text-decoration:none;
+}
+
+.countdown{
+    background:#f7f3ee;
+    text-align:center;
+}
+
+.timer{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+}
+
+.timer-item{
+    min-width:120px;
+}
+
+.timer-item span{
+    display:block;
+    font-size:60px;
+    color:#7d6851;
+}
+
+.location{
+    text-align:center;
+}
+
+.location img{
+    width:100%;
+    max-width:900px;
+    height:500px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:30px;
+}
+
+.location h3{
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.location p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.dresscode{
+    background:#f7f3ee;
+    text-align:center;
+}
+
+.palette{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:50px;
+}
+
+.color{
+    text-align:center;
+}
+
+.circle{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    border:3px solid white;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.map iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:12px;
+}
+
+.rsvp{
+    text-align:center;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+}
+
+button{
+    padding:15px 40px;
+    border:none;
+    background:#7d6851;
+    color:white;
+    cursor:pointer;
+}
+
+footer{
+    background:#7d6851;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:60px;
+}
+
+h2{
+    font-size:42px;
+}
+
+.location img{
+    height:300px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div>
+        <p>Весільне запрошення</p>
+
+        <h1>
+            Олександр<br>
+            &<br>
+            Оксана
+        </h1>
+
+        <div class="date">
+            22 серпня 2026 року
+        </div>
+
+        <a href="#ceremony">
+            Деталі події
+        </a>
+    </div>
+</section>
+
+<section class="countdown">
+    <div class="container">
+
+        <h2>До нашого весілля залишилось</h2>
+
+        <div class="timer">
+
+            <div class="timer-item">
+                <span id="days">0</span>
+                днів
+            </div>
+
+            <div class="timer-item">
+                <span id="hours">0</span>
+                годин
+            </div>
+
+            <div class="timer-item">
+                <span id="minutes">0</span>
+                хвилин
+            </div>
+
+            <div class="timer-item">
+                <span id="seconds">0</span>
+                секунд
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="ceremony" class="location">
+
+    <div class="container">
+
+        <h2>Вінчання</h2>
+
+        <img
+        src="images/lisnovychi-church.jpg"
+        alt="Церква у Лісновичах">
+
+        <h3>с. Лісновичі</h3>
+
+        <p>
+            Запрошуємо Вас розділити з нами
+            Таїнство Вінчання.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="location" style="background:#f7f3ee">
+
+    <div class="container">
+
+        <h2>Святкування</h2>
+
+        <img
+        src="images/sherwood.jpg"
+        alt="ГРК Шервуд">
+
+        <h3>ГРК «Шервуд»</h3>
+
+        <p>
+            с. Довгомостиська
+        </p>
+
+    </div>
+
+</section>
+
+<section class="dresscode">
+
+    <div class="container">
+
+        <h2>Dress Code</h2>
+
+        <p>
+            Будемо вдячні, якщо Ви підтримаєте
+            кольорову палітру нашого свята
+        </p>
+
+        <div class="palette">
+
+            <div class="color">
+                <div class="circle" style="background:#E8D8D2"></div>
+            </div>
+
+            <div class="color">
+                <div class="circle" style="background:#F2D7E0"></div>
+            </div>
+
+            <div class="color">
+                <div class="circle" style="background:#C7D6C0"></div>
+            </div>
+
+            <div class="color">
+                <div class="circle" style="background:#8CA84A"></div>
+            </div>
+
+            <div class="color">
+                <div class="circle" style="background:#5E8340"></div>
+            </div>
+
+            <div class="color">
+                <div class="circle" style="background:#A69284"></div>
+            </div>
+
+            <div class="color">
+                <div class="circle" style="background:#7A6748"></div>
+            </div>
+
+            <div class="color">
+                <div class="circle" style="background:#50392A"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="map">
+
+    <div class="container">
+
+        <h2>Локація</h2>
+
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13574.689231032979!2d23.450366362716423!3d49.781318362978006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b10198b249bf5%3A0xd872665207576289!2sSherwood!5e1!3m2!1sen!2sua!4v1780605834016!5m2!1sen!2sua" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+    </div>
+
+</section>
+
+<section class="rsvp">
+
+    <div class="container">
+
+        <h2>Підтвердження присутності</h2>
+
+        <form>
+
+            <input
+            type="text"
+            placeholder="Ваше ім'я">
+
+            <input
+            type="tel"
+            placeholder="Телефон">
+
+            <textarea
+            rows="5"
+            placeholder="Ваш коментар"></textarea>
+
+            <button type="submit">
+                Надіслати
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer>
+
+    З нетерпінням чекаємо на зустріч з Вами ❤️
+
+</footer>
+
+<script>
+
+const weddingDate =
+new Date("August 22, 2026 12:00:00").getTime();
+
+setInterval(() => {
+
+const now = new Date().getTime();
+const distance = weddingDate - now;
+
+document.getElementById("days").innerHTML =
+Math.floor(distance / (1000*60*60*24));
+
+document.getElementById("hours").innerHTML =
+Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
+
+document.getElementById("minutes").innerHTML =
+Math.floor((distance % (1000*60*60)) / (1000*60));
+
+document.getElementById("seconds").innerHTML =
+Math.floor((distance % (1000*60)) / 1000);
+
+},1000);
+
+</script>
+
+</body>
+</html>
