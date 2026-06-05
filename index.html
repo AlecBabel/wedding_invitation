@@ -306,6 +306,64 @@ h2{
     }
 
 }
+
+.personal-invitation{
+    background:#f7f3ee;
+    padding:120px 20px;
+}
+
+.invitation-card{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+    background:white;
+    padding:70px 50px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.small-text{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#8c7a68;
+    margin-bottom:20px;
+}
+
+.personal-invitation h2{
+    margin-bottom:20px;
+}
+
+.divider{
+    width:100px;
+    height:1px;
+    background:#c9b8a7;
+    margin:25px auto;
+}
+
+.invitation-text{
+    font-size:20px;
+    line-height:1.9;
+    max-width:600px;
+    margin:0 auto 20px;
+}
+
+.signature{
+    margin-top:40px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:30px;
+    color:#7d6851;
+}
+
+@media(max-width:768px){
+
+    .invitation-card{
+        padding:40px 25px;
+    }
+
+    .invitation-text{
+        font-size:18px;
+    }
+}
 </style>
 </head>
 
@@ -313,8 +371,6 @@ h2{
 
 <section class="hero">
     <div>
-        <p>Весільне запрошення</p>
-
         <h1>
             Олександр<br>
             &<br>
@@ -324,9 +380,9 @@ h2{
         <div class="date">
             22 серпня 2026 року
         </div>
-        <span style="display:block;margin-top:40px;font-size:22px;letter-spacing:2px;">
+        <!-- <span style="display:block;margin-top:40px;font-size:22px;letter-spacing:2px;">
             Будемо раді розділити з Вами цей особливий день!
-        </span>
+        </span> -->
     </div>
 </section>
 
@@ -360,6 +416,51 @@ h2{
         </div>
 
     </div>
+</section>
+
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_7997.jpg"
+        alt="Олександр та Оксана">
+
+</section>
+
+<section class="personal-invitation">
+
+    <div class="container">
+
+        <div class="invitation-card">
+
+            <p class="small-text">
+                Дорогі
+            </p>
+
+            <h2>
+                Роман та Лілія
+            </h2>
+
+            <div class="divider"></div>
+
+            <p class="invitation-text">
+                Запрошуємо Вас розділити з нами один із найважливіших
+                та найщасливіших днів у нашому житті.
+            </p>
+
+            <p class="invitation-text">
+                Для нас буде великою честю бачити Вас поруч у день,
+                коли ми скажемо одне одному найважливіше «Так».
+            </p>
+
+            <p class="signature">
+                Ваші<br>
+                Олександр та Оксана ❤️
+            </p>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- <section class="schedule">
@@ -645,7 +746,7 @@ h2{
         alt="Олександр та Оксана">
 
     <div class="photo-overlay">
-        <h2>Олександр & Оксана</h2>
+        <h2 style="font-size:48px;">Олександр & Оксана</h2>
         <p>22 серпня 2026</p>
     </div>
 
