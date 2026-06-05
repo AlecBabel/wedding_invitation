@@ -47,7 +47,7 @@ h2{
     height:100vh;
     background:
     linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
-    url("images/couple.jpg") center center/cover;
+    url("src\\We\\IMG_81212.jpg") center / cover no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -201,6 +201,109 @@ h2{
 }
 
 }
+.schedule{
+    background:#ffffff;
+    padding:100px 20px;
+}
+
+.timeline{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.event{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    padding:18px 25px;
+    margin-bottom:15px;
+    background:#f7f3ee;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.event:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.time{
+    min-width:170px;
+    font-weight:600;
+    color:#7d6851;
+}
+
+.description{
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+    .event{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+
+    .time{
+        min-width:auto;
+    }
+}
+.photo-divider{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.photo-divider img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.photo-overlay{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    background:rgba(0,0,0,.25);
+    color:white;
+}
+
+.photo-overlay h2{
+    color:white;
+    font-size:72px;
+    margin-bottom:15px;
+    font-family:'Cormorant Garamond',serif;
+    font-weight:300;
+}
+
+.photo-overlay p{
+    font-size:24px;
+    letter-spacing:4px;
+}
+
+@media(max-width:768px){
+
+    .photo-divider{
+        height:50vh;
+    }
+
+    .photo-overlay h2{
+        font-size:42px;
+    }
+
+    .photo-overlay p{
+        font-size:18px;
+    }
+
+}
 </style>
 </head>
 
@@ -219,10 +322,9 @@ h2{
         <div class="date">
             22 серпня 2026 року
         </div>
-
-        <a href="#ceremony">
-            Деталі події
-        </a>
+        <span style="display:block;margin-top:40px;font-size:22px;letter-spacing:2px;">
+            Будемо раді розділити з Вами цей особливий день!
+        </span>
     </div>
 </section>
 
@@ -258,6 +360,110 @@ h2{
     </div>
 </section>
 
+<!-- <section class="schedule">
+
+    <div class="container">
+
+        <h2>Розклад дня</h2>
+
+        <div class="timeline">
+
+            <div class="event">
+                <div class="time">11:30 – 12:30</div>
+                <div class="description">Вінчання</div>
+            </div>
+
+            <div class="event">
+                <div class="time">13:00 – 13:30</div>
+                <div class="description">Збір гостей у ГРК «Шервуд»</div>
+            </div>
+
+            <div class="event">
+                <div class="time">13:30 – 14:00</div>
+                <div class="description">Весільна церемонія</div>
+            </div>
+
+            <div class="event">
+                <div class="time">14:00 – 14:30</div>
+                <div class="description">Вітання від гостей</div>
+            </div>
+
+            <div class="event">
+                <div class="time">14:30 – 15:30</div>
+                <div class="description">Перше застілля</div>
+            </div>
+
+            <div class="event">
+                <div class="time">15:30 – 16:30</div>
+                <div class="description">Перший весільний танець та танцювальний блок</div>
+            </div>
+
+            <div class="event">
+                <div class="time">16:30 – 17:30</div>
+                <div class="description">Друге застілля</div>
+            </div>
+
+            <div class="event">
+                <div class="time">17:30 – 18:15</div>
+                <div class="description">Другий танцювальний блок</div>
+            </div>
+
+            <div class="event">
+                <div class="time">18:15 – 18:45</div>
+                <div class="description">Розрізання весільного торта</div>
+            </div>
+
+            <div class="event">
+                <div class="time">18:45 – 19:15</div>
+                <div class="description">Фуршет</div>
+            </div>
+
+            <div class="event">
+                <div class="time">19:15 – 19:45</div>
+                <div class="description">Третій танцювальний блок</div>
+            </div>
+
+            <div class="event">
+                <div class="time">20:00 – 20:30</div>
+                <div class="description">Танець з батьками</div>
+            </div>
+
+            <div class="event">
+                <div class="time">20:30 – 21:00</div>
+                <div class="description">Танці</div>
+            </div>
+
+            <div class="event">
+                <div class="time">21:00 – 22:30</div>
+                <div class="description">Весільні традиції</div>
+            </div>
+
+            <div class="event">
+                <div class="time">22:30 – 23:00</div>
+                <div class="description">Завершення вечора</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section> -->
+
+
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_8163.jpg"
+        alt="Олександр та Оксана">
+
+    <!-- <div class="photo-overlay">
+        <h2>Олександр & Оксана</h2>
+        <p>22 серпня 2026</p>
+    </div> -->
+
+</section>
+
+
 <section id="ceremony" class="location">
 
     <div class="container">
@@ -265,17 +471,30 @@ h2{
         <h2>Вінчання</h2>
 
         <img
-        src="images/lisnovychi-church.jpg"
+        src="src\Church.png"
         alt="Церква у Лісновичах">
 
-        <h3>с. Лісновичі</h3>
+        <h3>Церква Святого Пророка Іллі <br> с. Лісновичі</h3>
 
-        <p>
-            Запрошуємо Вас розділити з нами
-            Таїнство Вінчання.
+        <p style="margin-top:15px;margin-bottom:20px;font-size:18px;line-height:1.8;">
+            Таїнство вінчання розпочнеться о 11:30. 
         </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4654.348102952086!2d23.556257907746236!3d49.86855071607049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b19d8eba86f1d%3A0xf5558b1ccf08be11!2sTserkva%20Svyatoho%20Proroka%20Illi!5e1!3m2!1sen!2sua!4v1780607793542!5m2!1sen!2sua" width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
     </div>
+
+</section>
+
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_7934.jpg"
+        alt="Олександр та Оксана">
+
+    <!-- <div class="photo-overlay">
+        <h2>Олександр & Оксана</h2>
+        <p>22 серпня 2026</p>
+    </div> -->
 
 </section>
 
@@ -286,7 +505,7 @@ h2{
         <h2>Святкування</h2>
 
         <img
-        src="images/sherwood.jpg"
+        src="src\Restaurant.png"
         alt="ГРК Шервуд">
 
         <h3>ГРК «Шервуд»</h3>
@@ -294,8 +513,29 @@ h2{
         <p>
             с. Довгомостиська
         </p>
+        <p style="margin-top:15px;margin-bottom:20px;font-size:18px;line-height:1.8;">
+            Збір гостей на святкування відбудеться в готельно-ресторанному комплексі «Шервуд» о 13:00, <br>
+            де ми з радісттю розділемо це свято з вами.
+        </p>    
 
+<iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13574.689231032979!2d23.450366362716423!3d49.781318362978006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b10198b249bf5%3A0xd872665207576289!2sSherwood!5e1!3m2!1sen!2sua!4v1780605834016!5m2!1sen!2sua" 
+        width="900" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
     </div>
+
+</section>
+
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_8170.jpg"
+        alt="Олександр та Оксана">
+
+    <!-- <div class="photo-overlay">
+        <h2>Олександр & Оксана</h2>
+        <p>22 серпня 2026</p>
+    </div> -->
 
 </section>
 
@@ -350,18 +590,16 @@ h2{
 
 </section>
 
-<section class="map">
+<section class="photo-divider">
 
-    <div class="container">
+    <img
+        src="src\We\IMG_7997.jpg"
+        alt="Олександр та Оксана">
 
-        <h2>Локація</h2>
-
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13574.689231032979!2d23.450366362716423!3d49.781318362978006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b10198b249bf5%3A0xd872665207576289!2sSherwood!5e1!3m2!1sen!2sua!4v1780605834016!5m2!1sen!2sua" 
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-    </div>
+    <!-- <div class="photo-overlay">
+        <h2>Олександр & Оксана</h2>
+        <p>22 серпня 2026</p>
+    </div> -->
 
 </section>
 
@@ -394,6 +632,18 @@ h2{
     </div>
 
 </section>
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_7984.jpg"
+        alt="Олександр та Оксана">
+
+    <div class="photo-overlay">
+        <h2>Олександр & Оксана</h2>
+        <p>22 серпня 2026</p>
+    </div>
+
+</section>
 
 <footer>
 
@@ -404,7 +654,7 @@ h2{
 <script>
 
 const weddingDate =
-new Date("August 22, 2026 12:00:00").getTime();
+new Date("August 22, 2026 11:30:00").getTime();
 
 setInterval(() => {
 
