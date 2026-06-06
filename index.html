@@ -190,11 +190,12 @@ span{
     img{
         width:100%;
         max-width:900px;
-        height:300px;
+        height:400px;
         object-fit:cover;
         border-radius:12px;
         margin-bottom:30px;
     }
+    
 }
 
 .location-time{
@@ -203,18 +204,76 @@ span{
     text-decoration-thickness: 2px;
 }
 
+.route-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin-top:25px;
+    padding:16px 32px;
+
+    background:rgb(144, 120, 94);
+    color:white;
+    text-decoration:none;
+
+    border-radius:50px;
+
+    font-size:15px;
+    letter-spacing:1px;
+
+    transition:.3s;
+}
+
+.route-btn:hover{
+    transform:translateY(-2px);
+
+    background:rgb(132, 107, 80);
+
+    box-shadow:
+        0 8px 20px rgba(125,104,81,.25);
+}
+
 .dresscode{
     /* background:#f7f3ee; */
     text-align:center;
+    h2{
+        font-family:'Cormorant Garamond',serif;
+        font-weight:100px;
+        margin-bottom:20px;
+    }
+    img{
+        width:100%;
+        max-width:600px;
+        height:auto;
+        border-radius:12px;
+        margin-top:30px;
+        -webkit-mask-image: linear-gradient(
+            to bottom,
+            transparent,
+            black 2%,
+            black 99%,
+            transparent
+        ),
+        linear-gradient(
+            to right,
+            transparent,
+            black 2%,
+            black 99%,
+            transparent
+        );
+
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+    }
 }
 
-.palette{
+/* .palette{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
     gap:25px;
     margin-top:50px;
-}
+} */
 
 .color{
     text-align:center;
@@ -262,12 +321,12 @@ button{
     cursor:pointer;
 } */
 
-footer{
+/* footer{
     background:#7d6851;
     color:f7f3ee;
     text-align:center;
     padding:40px;
-}
+} */
 
 .schedule{
     background:#ffffff;
@@ -417,7 +476,7 @@ footer{
         font-size:12px;
     }
     .location img{
-        max-height:100px;
+        max-height:200px;
     }
     .invitation-card{
         padding:40px 25px;
@@ -441,7 +500,7 @@ footer{
     }
 
     .photo-overlay p{
-        font-size:18px;
+        font-size:12px;
     }
 }
 </style>
@@ -475,47 +534,6 @@ footer{
         </a>
 
     </div>
-
-</section>
-
-
-<section class="countdown">
-    <div class="container">
-
-        <h2>До нашого весілля залишилось</h2>
-
-        <div class="timer">
-
-            <div class="timer-item">
-                <span id="days">0</span>
-                днів
-            </div>
-
-            <div class="timer-item">
-                <span id="hours">0</span>
-                годин
-            </div>
-
-            <div class="timer-item">
-                <span id="minutes">0</span>
-                хвилин
-            </div>
-
-            <div class="timer-item">
-                <span id="seconds">0</span>
-                секунд
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="photo-divider">
-
-    <img
-        src="src\We\IMG_7997.jpg"
-        alt="Олександр та Оксана">
 
 </section>
 
@@ -678,13 +696,22 @@ footer{
         <p style="margin-top:15px;margin-bottom:20px">
             с. Лісновичі
         </p>
-        <div class="map" >
+        <!-- <div class="map" >
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4654.348102952086!2d23.556257907746236!3d49.86855071607049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b19d8eba86f1d%3A0xf5558b1ccf08be11!2sTserkva%20Svyatoho%20Proroka%20Illi!5e1!3m2!1sen!2sua!4v1780607793542!5m2!1sen!2sua"  
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>      
-        </div>
-        
+        </div> -->
+        <a
+            href="https://maps.app.goo.gl/csegvsf4N9TaJiHA8"
+            target="_blank"
+            class="route-btn"
+        >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+            Побудувати маршрут
+        </a>
 
     </div>
 
@@ -724,12 +751,22 @@ footer{
             с. Довгомостиська
         </p>
     
-        <div class="map">
+        <!-- <div class="map">
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13574.689231032979!2d23.450366362716423!3d49.781318362978006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b10198b249bf5%3A0xd872665207576289!2sSherwood!5e1!3m2!1sen!2sua!4v1780605834016!5m2!1sen!2sua"  
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>      
-        </div>
+        </div> -->
+        <a
+            href="https://maps.app.goo.gl/h5jYYS85vU5ccTtm9"
+            target="_blank"
+            class="route-btn"
+        >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/>
+            </svg>
+            Побудувати маршрут
+        </a>
     </div>
 
 </section>
@@ -737,13 +774,8 @@ footer{
 <section class="photo-divider">
 
     <img
-        src="src\We\IMG_8170.jpg"
+        src="src\We\IMG_7971.jpg"
         alt="Олександр та Оксана">
-
-    <!-- <div class="photo-overlay">
-        <h2>Олександр & Оксана</h2>
-        <p>22 серпня 2026</p>
-    </div> -->
 
 </section>
 
@@ -754,11 +786,10 @@ footer{
         <h2>Dress Code</h2>
 
         <p>
-            Будемо вдячні, якщо Ви підтримаєте
-            кольорову палітру нашого свята
+            Ми старались зробити неше свято красивим та вишуканим, тож будемо вдячні якщо Ви підтримаєте кольорову гамму нашого весілля. 
         </p>
 
-        <div class="palette">
+        <!-- <div class="palette">
 
             <div class="color">
                 <div class="circle" style="background:#E8D8D2"></div>
@@ -792,8 +823,8 @@ footer{
                 <div class="circle" style="background:#50392A"></div>
             </div>
 
-        </div>
-
+        </div> -->
+        <img src="src/IMG_4678.png" alt="Палітра кольорів весілля" style="width:100%;max-width:600px;margin-top:30px;border-radius:12px;">
     </div>
 
 </section>
@@ -836,6 +867,53 @@ footer{
 
 </section> -->
 
+
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_7997.jpg"
+        alt="Олександр та Оксана">
+
+    <!-- <div class="photo-overlay">
+        <h2>Олександр & Оксана</h2>
+        <p>22 серпня 2026</p>
+    </div> -->
+
+</section>
+
+<section class="countdown">
+    <div class="container">
+
+        <h2>До нашого весілля залишилось</h2>
+
+        <div class="timer">
+
+            <div class="timer-item">
+                <span id="days">0</span>
+                днів
+            </div>
+
+            <div class="timer-item">
+                <span id="hours">0</span>
+                годин
+            </div>
+
+            <div class="timer-item">
+                <span id="minutes">0</span>
+                хвилин
+            </div>
+
+            <div class="timer-item">
+                <span id="seconds">0</span>
+                секунд
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 <section class="photo-divider">
 
     <img
@@ -843,16 +921,16 @@ footer{
         alt="Олександр та Оксана">
 
     <div class="photo-overlay">
-        <p>Олександр & Оксана <br>22 серпня 2026</p>
+        <p>До зустрічі <br>22 серпня 2026 року</p>
     </div>
 
 </section>
 
-<footer>
+<!-- <footer>
 
     З нетерпінням чекаємо на зустріч з Вами ❤️
 
-</footer>
+</footer> -->
 
 <script>
 
