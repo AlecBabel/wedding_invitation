@@ -39,6 +39,7 @@ section{
 
 h2{
     font-family:'Cormorant Garamond',serif;
+    font-weight:300;
     font-size:60px;
     text-align:center;
     color:#f7f3ee;
@@ -321,12 +322,6 @@ button{
     cursor:pointer;
 } */
 
-/* footer{
-    background:#7d6851;
-    color:f7f3ee;
-    text-align:center;
-    padding:40px;
-} */
 
 .schedule{
     background:#ffffff;
@@ -382,27 +377,32 @@ button{
 .photo-overlay{
     position:absolute;
     inset:0;
+    padding:50px 20px;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
     text-align:center;
+    letter-spacing:4px;
 
     background:rgba(0,0,0,.25);
     color:white;
+    h2{
+        font-family:Great Vibes, cursive;
+        font-weight: 500;
+        font-style: italic;
+        font-size:48px;
+        margin:0;
+        padding: 20px;
+    }
+    p{
+        padding:20px
+    }
+
 }
 
-.photo-overlay h2{
-    color:white;
-    font-size:72px;
-    margin-bottom:15px;
-    font-family:'Cormorant Garamond',serif;
-    font-weight:300;
-}
-
-.photo-overlay p{
+p{
     font-size:24px;
-    letter-spacing:4px;
 }
 
 .personal-invitation{
@@ -461,6 +461,50 @@ button{
     margin:0 auto 20px;
 }
 
+.presents{
+    p{
+        text-align:center;
+    }
+}
+
+
+.confirmation{
+    /* background:#f7f3ee; */
+    text-align:center;
+    padding:120px 20px;
+}
+
+.confirmation-text{
+    line-height:1.9;
+}
+
+.confirmation-buttons{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.confirm-btn{
+    display:inline-block;
+    padding:16px 36px;
+    border-radius:50px;
+
+    background:#7d6851;
+    color:white;
+    text-decoration:none;
+
+    transition:.3s;
+    :hover{
+        transform:translateY(-2px);
+        box-shadow:0 10px 20px rgba(0,0,0,.1);
+    }
+
+}
+
+
+
 @media(max-width:768px){
     .hero h1{
         font-size:60px;
@@ -495,13 +539,17 @@ button{
         min-width:auto;
     }
 
-    .photo-overlay h2{
-        font-size:42px;
+    .photo-overlay{
+        h2{
+            font-size:20px;
+            padding:10px;
+        }
+        p{
+            padding:10px;
+
+        }
     }
 
-    .photo-overlay p{
-        font-size:12px;
-    }
 }
 </style>
 </head>
@@ -667,11 +715,6 @@ button{
         src="src\We\IMG_8163.jpg"
         alt="Олександр та Оксана">
 
-    <!-- <div class="photo-overlay">
-        <h2>Олександр & Оксана</h2>
-        <p>22 серпня 2026</p>
-    </div> -->
-
 </section>
 
 
@@ -696,14 +739,8 @@ button{
         <p style="margin-top:15px;margin-bottom:20px">
             с. Лісновичі
         </p>
-        <!-- <div class="map" >
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4654.348102952086!2d23.556257907746236!3d49.86855071607049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b19d8eba86f1d%3A0xf5558b1ccf08be11!2sTserkva%20Svyatoho%20Proroka%20Illi!5e1!3m2!1sen!2sua!4v1780607793542!5m2!1sen!2sua"  
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>      
-        </div> -->
         <a
-            href="https://maps.app.goo.gl/csegvsf4N9TaJiHA8"
+            href="https://maps.google.com/?q=49.8685507,23.5562579"
             target="_blank"
             class="route-btn"
         >
@@ -722,11 +759,6 @@ button{
     <img
         src="src\We\IMG_7934.jpg"
         alt="Олександр та Оксана">
-
-    <!-- <div class="photo-overlay">
-        <h2>Олександр & Оксана</h2>
-        <p>22 серпня 2026</p>
-    </div> -->
 
 </section>
 
@@ -758,7 +790,7 @@ button{
             </iframe>      
         </div> -->
         <a
-            href="https://maps.app.goo.gl/h5jYYS85vU5ccTtm9"
+            href="https://maps.google.com/?q=49.7845337,23.4542224"
             target="_blank"
             class="route-btn"
         >
@@ -829,13 +861,6 @@ button{
 
 </section>
 
-<!-- <section class="photo-divider">
-
-    <img
-        src="src\We\IMG_7997.jpg"
-        alt="Олександр та Оксана">
-
-</section> -->
 
 <!-- <section class="rsvp">
 
@@ -874,11 +899,71 @@ button{
         src="src\We\IMG_7997.jpg"
         alt="Олександр та Оксана">
 
-    <!-- <div class="photo-overlay">
-        <h2>Олександр & Оксана</h2>
-        <p>22 серпня 2026</p>
-    </div> -->
+</section>
+<section class="presents">
+    <div class="container">
 
+        <h2>Подарунки</h2>
+
+        <p>
+            Не обтяжуйте себе вибором подарунку. <br>
+            Ваші конверти допоможуть нам здійснити нашу мрію.
+        </p>
+
+    </div>
+</section>
+
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_79302.jpg"
+        alt="Олександр та Оксана">
+</section>
+
+<section class="confirmation">
+
+    <div class="container">
+
+        <h2>Підтвердження присутності</h2>
+
+        <!-- <p class="confirmation-text">
+            Будемо щиро раді розділити цей особливий день разом з Вами.
+        </p> -->
+
+        <p class="confirmation-text">
+            Будемо щиро раді бачити Вас в цей особливий день. <br>
+            Просимо підтвердити свою присутність
+            до <strong>1 серпня 2026 року</strong>,
+            щоб ми могли подбати про комфорт кожного гостя.
+        </p>
+
+        <div class="confirmation-buttons">
+
+            <a
+                href="tel:+380500316095"
+                class="confirm-btn"
+            >
+                📞 Зателефонувати
+            </a>
+
+            <a
+                href="https://t.me/B_Olek"
+                target="_blank"
+                class="confirm-btn"
+            >
+                ✉️ Написати в Telegram
+            </a>
+
+        </div>
+    </div>
+
+</section>
+
+<section class="photo-divider">
+
+    <img
+        src="src\We\IMG_8117.jpg"
+        alt="Олександр та Оксана">
 </section>
 
 <section class="countdown">
@@ -921,16 +1006,12 @@ button{
         alt="Олександр та Оксана">
 
     <div class="photo-overlay">
-        <p>До зустрічі <br>22 серпня 2026 року</p>
+        <h2>До зустрічі !</h2>
+        <p>22/08/2026</p>
     </div>
 
 </section>
 
-<!-- <footer>
-
-    З нетерпінням чекаємо на зустріч з Вами ❤️
-
-</footer> -->
 
 <script>
 
