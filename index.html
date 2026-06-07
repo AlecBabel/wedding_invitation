@@ -50,6 +50,10 @@ span{
     font-size:20px;
 }
 
+p{
+    font-size:24px;
+}
+
 .hero{
     position:relative;
     height:100vh;
@@ -70,6 +74,13 @@ span{
     justify-content:center;
     align-items:center;
     text-align:center;
+    h1{
+        font-family:'Cormorant Garamond',serif;
+        font-size:80px;
+        font-weight:300;
+        line-height:.95;
+        margin-bottom:30px;
+    }
 }
 
 .hero-content{
@@ -88,13 +99,6 @@ span{
     opacity:.9;
 }
 
-.hero h1{
-    font-family:'Cormorant Garamond',serif;
-    font-size:80px;
-    font-weight:300;
-    line-height:.95;
-    margin-bottom:30px;
-}
 
 .hero-line{
     width:120px;
@@ -110,11 +114,6 @@ span{
     margin-bottom:10px;
 }
 
-.hero-place{
-    font-size:14px;
-    letter-spacing:3px;
-    opacity:.85;
-}
 
 .scroll-down{
     display:inline-block;
@@ -137,24 +136,7 @@ span{
     }
 }
 
-@media(max-width:768px){
-
-    .hero h1{
-        font-size:65px;
-    }
-
-    .hero-date{
-        font-size:18px;
-    }
-
-    .hero-place{
-        font-size:14px;
-    }
-
-}
-
 .countdown{
-    /* background:#f7f3ee; */
     text-align:center;
 }
 
@@ -223,19 +205,18 @@ span{
     letter-spacing:1px;
 
     transition:.3s;
+    
 }
-
 .route-btn:hover{
-    transform:translateY(-2px);
+        transform:translateY(-2px);
 
-    background:rgb(132, 107, 80);
+        background:rgb(132, 107, 80);
 
-    box-shadow:
-        0 8px 20px rgba(125,104,81,.25);
-}
+        box-shadow:
+            0 8px 20px rgba(125,104,81,.25);
+    }
 
 .dresscode{
-    /* background:#f7f3ee; */
     text-align:center;
     h2{
         font-family:'Cormorant Garamond',serif;
@@ -262,101 +243,24 @@ span{
             black 99%,
             transparent
         );
+        mask-image: linear-gradient(
+            to bottom,
+            transparent,
+            black 2%,
+            black 99%,
+            transparent
+        ),
+        linear-gradient(
+            to right,
+            transparent,
+            black 2%,
+            black 99%,
+            transparent
+        );
 
     -webkit-mask-composite: source-in;
     mask-composite: intersect;
     }
-}
-
-/* .palette{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:25px;
-    margin-top:50px;
-} */
-
-.color{
-    text-align:center;
-}
-
-.circle{
-    width:80px;
-    height:80px;
-    border-radius:50%;
-    border:3px solid white;
-    box-shadow:0 3px 10px rgba(0,0,0,.15);
-}
-
-.map iframe{
-    width:100%;
-    height:100px;
-    border:none;
-    border-radius:12px;
-    filter: sepia(0.4) saturate(1.3) hue-rotate(-8deg);
-
-}
-
-/* .rsvp{
-    text-align:center;
-} */
-
-/* form{
-    max-width:600px;
-    margin:auto;
-}
-
-input,
-textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:15px;
-    border:1px solid #ddd;
-}
-
-button{
-    padding:15px 40px;
-    border:none;
-    background:#7d6851;
-    color:white;
-    cursor:pointer;
-} */
-
-
-.schedule{
-    background:#ffffff;
-    padding:100px 20px;
-}
-
-.timeline{
-    max-width:900px;
-    margin:0 auto;
-}
-
-.event{
-    display:flex;
-    align-items:center;
-    gap:30px;
-    padding:18px 25px;
-    margin-bottom:15px;
-    /* background:#f7f3ee; */
-    border-radius:12px;
-    transition:.3s;
-}
-
-.event:hover{
-    transform:translateY(-2px);
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-
-.time{
-    min-width:170px;
-    font-weight:600;
-    color:#f7f3ee;
-}
-
-.description{
-    font-size:18px;
 }
 
 .photo-divider{
@@ -401,10 +305,6 @@ button{
 
 }
 
-p{
-    font-size:24px;
-}
-
 .personal-invitation{
     padding:120px 20px;
 }
@@ -440,12 +340,6 @@ p{
         }
     }
 }
-.small-text{
-    letter-spacing:4px;
-    text-transform:uppercase;
-    color:#f7f3ee;
-    margin-bottom:20px;
-}
 
 .divider{
     width:100px;
@@ -469,9 +363,7 @@ p{
 
 
 .confirmation{
-    /* background:#f7f3ee; */
     text-align:center;
-    padding:120px 20px;
 }
 
 .confirmation-text{
@@ -480,32 +372,65 @@ p{
 
 .confirmation-buttons{
     margin-top:40px;
-    display:flex;
+    display:block;
+    background:rgba(214, 201, 192, 0.5);
+    width:fit-content;
+    padding:20px;
+    margin:auto;
+    border-radius:12px;
+    margin-top:20px;
+    /* margin:20px 0; */
+    /* display:flex;
     justify-content:center;
-    gap:20px;
+    gap:20px; */
     flex-wrap:wrap;
+
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    span{
+        display:block;
+        font-family:Great Vibes;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 48px;
+        margin: 10px;
+        letter-spacing: 2px;
+    }
 }
 
 .confirm-btn{
     display:inline-block;
+    width:100%;
     padding:16px 36px;
     border-radius:50px;
-
-    background:#7d6851;
+    margin-top:10px;
+    background:rgb(144, 120, 94);
     color:white;
     text-decoration:none;
+    box-shadow: 0 10px 25px rgba(125,104,81,.25);
 
     transition:.3s;
-    :hover{
-        transform:translateY(-2px);
-        box-shadow:0 10px 20px rgba(0,0,0,.1);
-    }
+    
 
 }
+.confirm-btn:hover{
+        transform:translateY(-2px);
 
+        background:rgb(132, 107, 80);
+
+        box-shadow:
+            0 8px 20px rgba(125,104,81,.25);
+    }
 
 
 @media(max-width:768px){
+    /* .hero h1{
+        font-size:65px;
+    } */
+
+    .hero-date{
+        font-size:18px;
+    }
     .hero h1{
         font-size:60px;
     }
@@ -538,7 +463,11 @@ p{
     .time{
         min-width:auto;
     }
-
+    .confirmation-buttons{
+        span{
+            font-size:24px;
+        }
+    }
     .photo-overlay{
         h2{
             font-size:20px;
@@ -572,10 +501,6 @@ p{
         <p class="hero-date">
             22 серпня 2026
         </p>
-<!-- 
-        <p class="hero-place">
-            Лісновичі • Шервуд
-        </p> -->
 
         <a href="#personal" class="scroll-down">
             ↓
@@ -618,96 +543,6 @@ p{
     </div>
 
 </section>
-
-<!-- <section class="schedule">
-
-    <div class="container">
-
-        <h2>Розклад дня</h2>
-
-        <div class="timeline">
-
-            <div class="event">
-                <div class="time">11:30 – 12:30</div>
-                <div class="description">Вінчання</div>
-            </div>
-
-            <div class="event">
-                <div class="time">13:00 – 13:30</div>
-                <div class="description">Збір гостей у ГРК «Шервуд»</div>
-            </div>
-
-            <div class="event">
-                <div class="time">13:30 – 14:00</div>
-                <div class="description">Весільна церемонія</div>
-            </div>
-
-            <div class="event">
-                <div class="time">14:00 – 14:30</div>
-                <div class="description">Вітання від гостей</div>
-            </div>
-
-            <div class="event">
-                <div class="time">14:30 – 15:30</div>
-                <div class="description">Перше застілля</div>
-            </div>
-
-            <div class="event">
-                <div class="time">15:30 – 16:30</div>
-                <div class="description">Перший весільний танець та танцювальний блок</div>
-            </div>
-
-            <div class="event">
-                <div class="time">16:30 – 17:30</div>
-                <div class="description">Друге застілля</div>
-            </div>
-
-            <div class="event">
-                <div class="time">17:30 – 18:15</div>
-                <div class="description">Другий танцювальний блок</div>
-            </div>
-
-            <div class="event">
-                <div class="time">18:15 – 18:45</div>
-                <div class="description">Розрізання весільного торта</div>
-            </div>
-
-            <div class="event">
-                <div class="time">18:45 – 19:15</div>
-                <div class="description">Фуршет</div>
-            </div>
-
-            <div class="event">
-                <div class="time">19:15 – 19:45</div>
-                <div class="description">Третій танцювальний блок</div>
-            </div>
-
-            <div class="event">
-                <div class="time">20:00 – 20:30</div>
-                <div class="description">Танець з батьками</div>
-            </div>
-
-            <div class="event">
-                <div class="time">20:30 – 21:00</div>
-                <div class="description">Танці</div>
-            </div>
-
-            <div class="event">
-                <div class="time">21:00 – 22:30</div>
-                <div class="description">Весільні традиції</div>
-            </div>
-
-            <div class="event">
-                <div class="time">22:30 – 23:00</div>
-                <div class="description">Завершення вечора</div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section> -->
-
 
 <section class="photo-divider">
 
@@ -782,13 +617,6 @@ p{
         <p style="margin-top:15px;margin-bottom:20px">
             с. Довгомостиська
         </p>
-    
-        <!-- <div class="map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13574.689231032979!2d23.450366362716423!3d49.781318362978006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b10198b249bf5%3A0xd872665207576289!2sSherwood!5e1!3m2!1sen!2sua!4v1780605834016!5m2!1sen!2sua"  
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>      
-        </div> -->
         <a
             href="https://maps.google.com/?q=49.7845337,23.4542224"
             target="_blank"
@@ -818,80 +646,12 @@ p{
         <h2>Dress Code</h2>
 
         <p>
-            Ми старались зробити неше свято красивим та вишуканим, тож будемо вдячні якщо Ви підтримаєте кольорову гамму нашого весілля. 
+            Ми старались зробити неше свято красивим та вишуканим, тож будемо вдячні, якщо Ви підтримаєте кольорову гамму нашого весілля. 
         </p>
-
-        <!-- <div class="palette">
-
-            <div class="color">
-                <div class="circle" style="background:#E8D8D2"></div>
-            </div>
-
-            <div class="color">
-                <div class="circle" style="background:#F2D7E0"></div>
-            </div>
-
-            <div class="color">
-                <div class="circle" style="background:#C7D6C0"></div>
-            </div>
-
-            <div class="color">
-                <div class="circle" style="background:#8CA84A"></div>
-            </div>
-
-            <div class="color">
-                <div class="circle" style="background:#5E8340"></div>
-            </div>
-
-            <div class="color">
-                <div class="circle" style="background:#A69284"></div>
-            </div>
-
-            <div class="color">
-                <div class="circle" style="background:#7A6748"></div>
-            </div>
-
-            <div class="color">
-                <div class="circle" style="background:#50392A"></div>
-            </div>
-
-        </div> -->
         <img src="src/IMG_4678.png" alt="Палітра кольорів весілля" style="width:100%;max-width:600px;margin-top:30px;border-radius:12px;">
     </div>
 
 </section>
-
-
-<!-- <section class="rsvp">
-
-    <div class="container">
-
-        <h2>Підтвердження присутності</h2>
-
-        <form>
-
-            <input
-            type="text"
-            placeholder="Ваше ім'я">
-
-            <input
-            type="tel"
-            placeholder="Телефон">
-
-            <textarea
-            rows="5"
-            placeholder="Ваш коментар"></textarea>
-
-            <button type="submit">
-                Надіслати
-            </button>
-
-        </form>
-
-    </div>
-
-</section> -->
-
 
 <section class="photo-divider">
 
@@ -926,18 +686,16 @@ p{
 
         <h2>Підтвердження присутності</h2>
 
-        <!-- <p class="confirmation-text">
-            Будемо щиро раді розділити цей особливий день разом з Вами.
-        </p> -->
-
         <p class="confirmation-text">
-            Будемо щиро раді бачити Вас в цей особливий день. <br>
-            Просимо підтвердити свою присутність
-            до <strong>1 серпня 2026 року</strong>,
-            щоб ми могли подбати про комфорт кожного гостя.
+
+            У відповідь на це запрошення просимо Вас підтвердити свою присутність до <br>
+            <strong>08 серпня 2026 року</strong>.
         </p>
 
         <div class="confirmation-buttons">
+            <span>  
+                Олександр
+            </span>
 
             <a
                 href="tel:+380500316095"
@@ -951,7 +709,28 @@ p{
                 target="_blank"
                 class="confirm-btn"
             >
-                ✉️ Написати в Telegram
+                ✉️ Telegram
+            </a>
+
+        </div>
+        <div class="confirmation-buttons">
+            <span>  
+                Оксана
+            </span>
+
+            <a
+                href="tel:+380964764093"
+                class="confirm-btn"
+            >
+                📞 Зателефонувати
+            </a>
+
+            <a
+                href="https://t.me/OKsana_Salabai"
+                target="_blank"
+                class="confirm-btn"
+            >
+                ✉️ Telegram
             </a>
 
         </div>
