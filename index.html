@@ -824,6 +824,10 @@ const guests = [
 ]
 
 const route = window.location.pathname.replace("/", "");
+if (guests.find(g => g.guestRoute === route)) {
+    document.getElementById("preGuestName").textContent = guests.find(g => g.guestRoute === route).preGuestName;
+    document.getElementById("guestName").textContent = guests.find(g => g.guestRoute === route).displayName;
+}
 
 // const params = new URLSearchParams(window.location.search);
 // const guest = params.get("guest");
@@ -832,10 +836,7 @@ const route = window.location.pathname.replace("/", "");
 //     document.getElementById("preGuestName").textContent = guests.find(g => g.guestsName === guest).preGuestName;
 //     document.getElementById("guestName").textContent = guests.find(g => g.guestsName === guest).displayName;
 // }
-if (guests.find(g => g.guestRoute === route)) {
-    document.getElementById("preGuestName").textContent = guests.find(g => g.guestRoute === route).preGuestName;
-    document.getElementById("guestName").textContent = guests.find(g => g.guestRoute === route).displayName;
-}
+
 
 </script>
 
