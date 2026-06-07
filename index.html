@@ -515,11 +515,11 @@ p{
     <div class="container">
 
         <div class="invitation-card">
-            <span class="invitation-text">
+            <span class="invitation-text" id="preGuestName">
                 Дорогі
             </span>
-            <h2>
-                Роман та Лілія
+            <h2 id="guestName">
+                Друзі та рідні
             </h2>
 
             <div class="divider"></div>
@@ -815,6 +815,27 @@ document.getElementById("seconds").innerHTML =
 Math.floor((distance % (1000*60)) / 1000);
 
 },1000);
+
+const guests = [
+    {guestRoute: "roman-liliya", preGuestName: "Дорогі", displayName: "Роман та Лілія"},
+    {guestRoute: "yevheniy", preGuestName: "Дорогий", displayName: "Євгеній"},
+    {guestRoute: "kateryna", preGuestName: "Дорога", displayName: "Катерина"},
+    {guestRoute: "ivanenko-family", preGuestName: "Дорогі", displayName: "Родина Іваненків"},
+]
+
+const route = window.location.pathname.replace("/", "");
+
+// const params = new URLSearchParams(window.location.search);
+// const guest = params.get("guest");
+
+// if (guest && guests.find(g => g.guestsName === guest)) {
+//     document.getElementById("preGuestName").textContent = guests.find(g => g.guestsName === guest).preGuestName;
+//     document.getElementById("guestName").textContent = guests.find(g => g.guestsName === guest).displayName;
+// }
+if (guests.find(g => g.guestRoute === route)) {
+    document.getElementById("preGuestName").textContent = guests.find(g => g.guestRoute === route).preGuestName;
+    document.getElementById("guestName").textContent = guests.find(g => g.guestRoute === route).displayName;
+}
 
 </script>
 
