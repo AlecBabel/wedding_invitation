@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:description" content="Запрошення на весілля">
+<meta property="og:description" content="Олександр & Оксана | 22.08.2026">
 <meta property="og:image" content="src/We/preview.jpg">
 <!-- <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630"> -->
@@ -12,7 +12,7 @@
 
 
 <link rel="icon" type="image/x-icon" href="src\love-letter.png">
-<title>Олександр & Оксана | 22.08.2026</title>
+<title>Запрошення на весілля</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
 
@@ -826,10 +826,245 @@ Math.floor((distance % (1000*60)) / 1000);
 },1000);
 
 const guests = [
-    {guestRoute: "roman-liliya", preGuestName: "Дорогі", displayName: "Роман та Лілія"},
-    {guestRoute: "yevheniy", preGuestName: "Дорогий", displayName: "Євгеній"},
-    {guestRoute: "kateryna", preGuestName: "Дорога", displayName: "Катерина"},
-]
+  // Попередній список
+  {
+    "guestRoute": "hryhoriy-mariya",
+    "preGuestName": "Дорогі",
+    "displayName": "Тато Григорій та мама Марія"
+  },
+  {
+    "guestRoute": "martynyk",
+    "preGuestName": "Дорогі",
+    "displayName": "Сімʼя Мартиник"
+  },
+  {
+    "guestRoute": "vitaliy-veronika",
+    "preGuestName": "Дорогі",
+    "displayName": "Віталій та Вероніка"
+  },
+  {
+    "guestRoute": "oleksandr-1",
+    "preGuestName": "Дорогий",
+    "displayName": "Олександр"
+  },
+  {
+    "guestRoute": "vitaliy",
+    "preGuestName": "Дорогий",
+    "displayName": "Віталій"
+  },
+  {
+    "guestRoute": "tym",
+    "preGuestName": "Дорогі",
+    "displayName": "Сімʼя Тим"
+  },
+  {
+    "guestRoute": "vasyl",
+    "preGuestName": "Дорогий",
+    "displayName": "Василь"
+  },
+  {
+    "guestRoute": "salabay-1",
+    "preGuestName": "Дорогі",
+    "displayName": "Сімʼя Салабай"
+  },
+  {
+    "guestRoute": "salabay-2",
+    "preGuestName": "Дорогі",
+    "displayName": "Сімʼя Салабай"
+  },
+  {
+    "guestRoute": "zenoviy-svitlana",
+    "preGuestName": "Дорогі",
+    "displayName": "Зеновій та Світлана"
+  },
+  {
+    "guestRoute": "yarema",
+    "preGuestName": "Дорогі",
+    "displayName": "Сімʼя Ярема"
+  },
+  {
+    "guestRoute": "roman-liliya",
+    "preGuestName": "Дорогі",
+    "displayName": "Роман та Лілія"
+  },
+  {
+    "guestRoute": "serhiy-oleksandra-matviy",
+    "preGuestName": "Дорогі",
+    "displayName": "Сергій, та Олександра, Матвій"
+  },
+  {
+    "guestRoute": "andriy-olha",
+    "preGuestName": "Дорогі",
+    "displayName": "Андрій та Ольга"
+  },
+  {
+    "guestRoute": "volodymyr-mariya-zlata",
+    "preGuestName": "Дорогі",
+    "displayName": "Володимир та Марія, Злата"
+  },
+  {
+    "guestRoute": "yuriy-valeriya",
+    "preGuestName": "Дорогі",
+    "displayName": "Юрій та Валерія"
+  },
+  {
+    "guestRoute": "oleh-evelina",
+    "preGuestName": "Дорогі",
+    "displayName": "Олег та Евеліна"
+  },
+  {
+    "guestRoute": "oleh-marta",
+    "preGuestName": "Дорогі",
+    "displayName": "Олег та Марта"
+  },
+  {
+    "guestRoute": "oleksandr-2",
+    "preGuestName": "Дорогі",
+    "displayName": "Олександр та Романія"
+  },
+  {
+    "guestRoute": "oleksiy-karina",
+    "preGuestName": "Дорогі",
+    "displayName": "Олексій та Каріна"
+  },
+  {
+    "guestRoute": "volodymyr-khrystyna",
+    "preGuestName": "Дорогі",
+    "displayName": "Володимир та Христина"
+  },
+  {
+    "guestRoute": "oleh-yana",
+    "preGuestName": "Дорогі",
+    "displayName": "Олег та Яна"
+  },
+  {
+    "guestRoute": "ruslan-alina",
+    "preGuestName": "Дорогі",
+    "displayName": "Руслан та Аліна"
+  },
+
+  // Нові гості
+  {
+    "guestRoute": "lyubov-mykolayivna",
+    "preGuestName": "Дорога",
+    "displayName": "Любов Миколаївна"
+  },
+  {
+    "guestRoute": "serhiy-nadiya",
+    "preGuestName": "Дорогі",
+    "displayName": "Тато Сергій та мама Надія"
+  },
+  {
+    "guestRoute": "oleh-dariya-sofiya",
+    "preGuestName": "Дорогі",
+    "displayName": "Олег, Дарʼя та Софія"
+  },
+  {
+    "guestRoute": "yevheniy",
+    "preGuestName": "Дорогий",
+    "displayName": "Євгеній"
+  },
+  {
+    "guestRoute": "oleksandr-3",
+    "preGuestName": "Дорогий",
+    "displayName": "Олександр"
+  },
+  {
+    "guestRoute": "maksym-yuliya",
+    "preGuestName": "Дорогі",
+    "displayName": "Максим та Юлія"
+  },
+  {
+    "guestRoute": "yehor-svitlana-danyyil",
+    "preGuestName": "Дорогі",
+    "displayName": "Єгор та Світлана, Даниїл"
+  },
+  {
+    "guestRoute": "kovalenko",
+    "preGuestName": "Дорогі",
+    "displayName": "сім'я Коваленко"
+  },
+  {
+    "guestRoute": "oleh-anna-ihnat",
+    "preGuestName": "Дорогі",
+    "displayName": "Олег, Анна та Ігнат"
+  },
+  {
+    "guestRoute": "stolyarovy-1",
+    "preGuestName": "Дорогі",
+    "displayName": "сім'я Столярови"
+  },
+  {
+    "guestRoute": "stolyarovy-2",
+    "preGuestName": "Дорогі",
+    "displayName": "сім'я Столярови"
+  },
+  {
+    "guestRoute": "tetyna-mykhaylivna",
+    "preGuestName": "Дорога",
+    "displayName": "Тетяна Михайлівна"
+  },
+  {
+    "guestRoute": "oksana-liza",
+    "preGuestName": "Дорогі",
+    "displayName": "Оксана та Ліза"
+  },
+  {
+    "guestRoute": "maslak",
+    "preGuestName": "Дорогі",
+    "displayName": "сім'я Маслак"
+  },
+  {
+    "guestRoute": "oleksiy",
+    "preGuestName": "Дорогий",
+    "displayName": "Олексій"
+  },
+  {
+    "guestRoute": "zaderi",
+    "preGuestName": "Дорогі",
+    "displayName": "Сім'я Задери"
+  },
+  {
+    "guestRoute": "potapovy",
+    "preGuestName": "Дорогі",
+    "displayName": "Сімʼя Потапови"
+  },
+  {
+    "guestRoute": "vasylyevykh",
+    "preGuestName": "Дорогі",
+    "displayName": "Сімʼя Васильєвих"
+  },
+  {
+    "guestRoute": "oleksandr-suputnytsya",
+    "preGuestName": "Дорогі",
+    "displayName": "Олександр та його супутниця"
+  },
+  {
+    "guestRoute": "oleksandr-nataliya",
+    "preGuestName": "Дорогі",
+    "displayName": "Олександр та Наталія"
+  },
+  {
+    "guestRoute": "trysantovychiv",
+    "preGuestName": "Дорогі",
+    "displayName": "сім'я Трисантовичів"
+  },
+  {
+    "guestRoute": "maksymovykh",
+    "preGuestName": "Дорогі",
+    "displayName": "сім'я Максимових"
+  },
+  {
+    "guestRoute": "mukhammad",
+    "preGuestName": "Дорогий",
+    "displayName": "Мухаммад"
+  },
+  {
+    "guestRoute": "oleksandr-4",
+    "preGuestName": "Дорогий",
+    "displayName": "Олександр"
+  }
+];
 
 // const route = window.location.pathname.replace("/", "");
 // if (guests.find(g => g.guestRoute === route)) {
